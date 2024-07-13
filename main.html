@@ -4,7 +4,9 @@
   </head>
   <body>
     Enter your name: <input type="text" id="fname">
-	
+	document.getElementById('fname').addEventListener('blur', function() {
+    this.value = this.value.toUpperCase();
+});
 	<script type="text/javascript" src="./script.js">
 	</script>
   </body>
